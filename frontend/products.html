@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products | SU Flea Market</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #667eea;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      color: #667eea;
+    }
+
+    main {
+      background: white;
+      padding: 3rem 2rem;
+      margin: 3rem auto;
+      max-width: 1200px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: fadeInUp 0.6s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #667eea;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-img {
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      height: 160px;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .product-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-price {
+      color: #667eea;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-desc {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      main {
+        padding: 2rem 1rem;
+        margin: 2rem 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">SU Flea Market</div>
+      <ul class="nav-links">
+        <li><a href="Strathmore Flea Market Anita& Michelle.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Latest Products</h1>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-img">📱</div>
+        <div class="product-name">iPhone X</div>
+        <div class="product-price">KSh 40,000</div>
+        <div class="product-desc">Slightly used, 64GB, black. In great condition!</div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">📚</div>
+        <div class="product-name">Java Programming Book</div>
+        <div class="product-price">KSh 800</div>
+        <div class="product-desc">Beginner to advanced Java book, 2nd edition.</div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">👕</div>
+        <div class="product-name">Strath T-shirt</div>
+        <div class="product-price">KSh 1,200</div>
+        <div class="product-desc">Custom branded T-shirt for Strathmore students.</div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">🍰</div>
+        <div class="product-name">Chocolate Cupcakes</div>
+        <div class="product-price">KSh 150</div>
+        <div class="product-desc">Homemade, 6 pieces. Fresh and sweet!</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
